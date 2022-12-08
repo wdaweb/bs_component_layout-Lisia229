@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+      overflow-x: hidden;
+      font-family: '標楷體';
+    }
+
+    .container-fulid {
+      background: #eee;
+
+    }
+
+    .photo {
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    .font-family {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .col-md-4,
+    .img-fluid {
+      border-radius: 0;
+    }
+
+    .col-md-6 {
+      align-self: center;
+      overflow: hidden;
+    }
+
+    .footer {
+      background: #000;
+      width: 100%;
+    }
+
+    .font-size-small {
+      font-size: 25px;
+    }
+
+    .font-size {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 992px) {
+      .p-lg-5 {
+        padding: 200px;
+      }
+
+      .w-33 {
+        width: 33%;
+        text-align: center;
+        margin: auto;
+      }
+
+      .footerContainer {
+        width: 80%;
+        margin: auto;
+      }
+
+      .carousel-inner {
+        width: 1920px;
+        height: 980px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fulid">
+    <!-- 導覽列 -->
+    <div class="top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">咒術迴戰
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#carouselExampleIndicators">圖片欣賞</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#news">相關消息</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#people">人物介紹</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#map">地圖</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#content">與我們聯絡</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- 輪播圖 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+            aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+            aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+            aria-label="Slide 10"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images8.alphacoders.com/114/1141570.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images5.alphacoders.com/114/1141137.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="http://sun9-88.userapi.com/impg/KJIKVEufiAOqtLSQqt_rb-GoYXARx92oKCGSEQ/CyeRPLae4bs.jpg?size=2000x1125&quality=95&sign=549c7dcbc87c377d49e842a7ad648856&type=album"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images6.alphacoders.com/114/1144163.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images4.alphacoders.com/112/1124786.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images6.alphacoders.com/112/1120777.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images8.alphacoders.com/114/1140981.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images3.alphacoders.com/114/1144293.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images7.alphacoders.com/114/1142794.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images5.alphacoders.com/113/1136046.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- 內容 -->
+    <div class="p-lg-5 bg-white">
+      <div class="row">
+        <!-- 卡片區1 -->
+        <div class="col-12 col-lg-4 p-4 p-lg-3 w-33">
+          <div class="card" style="height: 600px;">
+            <img
+              src="https://res.klook.com/image/upload/c_fill,w_750,h_500,f_auto/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/erl3dlsggousa64ovnjw.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+                《咒術迴戰》為日本漫畫家「芥見下下」的漫畫作品，2018年於《週刊少年Jump》開始連載。
+                故事講述當人們產生負面情緒會形成危害人類的「咒靈」，導致每年在日本都有超過一萬人「不明死亡」或「失蹤」，唯有咒術師才能與之咒靈戰鬥、祓除咒靈。本作主角虎杖悠仁為了救人而被“詛咒”纏身，就此展開一連串的除咒冒險。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 卡片區2 -->
+        <div class="col-12 col-lg-4 p-4 p-lg-3 w-33" id="news">
+          <div class="card" style="height: 600px;">
+            <img
+              src="https://image-cdn.hypb.st/https%3A%2F%2Fhk.hypebeast.com%2Ffiles%2F2022%2F08%2Fjujutsu-kaisen-anime-season-2-info-coming-soon-0.jpg?w=960&cbr=1&q=90&fit=max"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+                由 MAPPA 製作的人氣動畫《咒術迴戰》第一季目前在日本電視台重新播出，在播出即將結束之際，官方釋出了「起首雷同篇」，以虎杖悠仁、伏黑惠以及釘崎野薔薇為主的新視覺海報，同時宣佈將於 9 月 18
+                日舉行特別節目，屆時將公開粉絲期待已久的動畫第二季情報。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 卡片區3 -->
+        <div class="col-12 col-lg-4 p-4 p-lg-3 w-33">
+          <div class="card" style="height: 600px;">
+            <img src="https://cc.tvbs.com.tw/img/upload/2022/09/14/20220914183435-a32dee89.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <p class="card-text">日本火紅動漫強片《劇場版 咒術迴戰0》，票房累計飆破全台２億，創下台灣影史日本票房第3名的佳績。9月，《劇場版
+                咒術迴戰0》即將於21日影音串流平台MyVideo上架，讓動漫迷可重溫乙骨憂太與祈本里香的愛情羈絆。另外，日本更推售藍光DVD版本，獨有封面照曝光後，可說是完成動漫迷的一大遺憾。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4張圖片區 -->
+    <div id="people">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                src="https://media.vogue.com.tw/photos/6238334dd03df11f700f55df/3:2/w_1287,h_858,c_limit/%E3%80%8A%E5%8A%87%E5%A0%B4%E7%89%88%20%E5%92%92%E8%A1%93%E8%BF%B4%E6%88%B0%200%E3%80%8B%E4%BA%94%E6%A2%9D%E6%82%9F(%E5%B7%A6)%E8%88%87%E4%B9%99%E9%AA%A8%E5%84%AA%E5%A4%AA.jpg"
+                class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 text-center">
+              <div class="text p-4">
+                <p class="font-size">乙骨優太</p>
+                <p>乙骨憂太，芥見下下創作的漫畫《咒術回戰》及其衍生作品角色，前傳《東京都立咒術高等專門學校》的主角。在正傳裏是東京都立咒術高等專門學校二年級生（前傳裏是一年級生）。
+                  咒術界已知存在的4位特級咒術師之一，現代咒術師中僅次於五條悟的異才。
+                  日本三大咒靈之一的菅原道真的子孫，五條悟的遠親。
+                  是個很重感情的人，與同級生禪院真希，狗卷棘，熊貓相處融洽</p>
+                <a href="#" class="btn btn-success">更多資訊</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row flex-lg-row-reverse">
+            <div class="col-12 col-md-6">
+              <img
+                src="https://image-cdn.hypb.st/https%3A%2F%2Fhk.hypebeast.com%2Ffiles%2F2022%2F09%2Fjujutsu-kaisen-anime-season-2-poster-release-info-0-1.jpg?w=960&cbr=1&q=90&fit=max"
+                class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 text-center">
+              <div class="text p-4">
+                <p class="font-size">五條悟</p>
+                <p>
+                  行為幼稚、愛耍白目、行蹤捉摸不定但看到本人還是會忍不住被他吸引，對，五條悟就是如今幾乎全網唾棄的射手男！1989年12月7日出生，身高190公分，出身《咒術迴戰》世界觀中的三大世家（加茂、禪院、和五條世家）之一，銀色頭髮、藍眼睛，個性幼稚卻擁有整部漫畫裡的頂級實力⋯這高富帥的天菜等級，真的是怎麼看怎麼愛。（？？？）
+                </p>
+                <a href="#" class="btn btn-success">更多資訊</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 地圖 -->
+    <div id="map">
+      <div class="row">
+        <div class="col-12">
+          <div class="ratio ratio-21x9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14457.921646854125!2d121.41223499999998!3d25.0517013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1670459219087!5m2!1szh-TW!2stw"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 聯絡我們 -->
+    <div id="content" class="content text-center p-3 m-lg-5 p-lg-5">
+      <form>
+        <div class="row">
+          <div class="col-12">
+            <h1>聯絡我們</h1>
+            <div class="text">
+              <span class="font-size-small">東京都立咒術高等專門學校</span>
+              <p>若是想入學與我們一同打怪，歡迎填表單報名!</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-start pb-2">
+            姓名
+            <div class="input-group">
+              <input class="form-control" aria-label="Text input with radio button">
+              <div class="input-group-text">
+                <input class="mt-0" type="radio" name="gender">先生
+                <input class="mt-0" type="radio" name="gender"> 女士
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-start pb-2">
+            <div>
+              電話
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-start pb-2">
+            <div class="mb-3">
+              電子信箱
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-start pb-2">
+            問題類型
+            <select class="form-select">
+              <option selected>您最喜歡的角色是?</option>
+              <option value="1">五條悟</option>
+              <option value="2">虎杖</option>
+              <option value="3">伏黑</option>
+            </select>
+          </div>
+          <div class="col-12 text-start pb-1">
+            提出意見
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="col-12 text-start">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                訂閱咒術高專相關訊息
+              </label>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <input type="submit" value="送出">
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+    <div class="footer p-3 p-lg-5">
+      <div class="row footerContainer">
+        <div class="col-6 col-md-3">
+          <img src="https://cdn.bella.tw/index_image/q1pT58NbrSIPA6P882qNIVsQ26j9LrWQNBYIwTax.jpeg" alt=""
+            class="photo">
+        </div>
+        <div class="col-6 col-md-3 text-white">
+          <p class="font-family">
+            <b> Adress </b><br>
+            1234 Stree Name <br>
+            City,AA 99999
+          </p>
+        </div>
+        <div class="col-6 col-md-3 text-light">
+          <p class="font-family">
+            <b> Links </b><br>
+            Website builder <br>
+            Download for Windows <br>
+            Download for Mac
+          </p>
+        </div>
+        <div class="col-6 col-md-3 text-light">
+          <p class="font-family">
+            <b>Contacts</b> <br>
+            Email:support@gmail.com <br>
+            Phone：+1 (0) 000 0000 001 <br>
+            Fax:+1 (0) 000 0000 001
+          </p>
+        </div>
+        <div class="col-12 text-light text-center">
+          <p class="font-family">
+            © Copyright 2021 Lisia Change - All right Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
